@@ -69,16 +69,39 @@ header nav a:hover {
 
 /*Filme principal */
 .filme-principal{
+  
+  
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-the-witcher.png');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/ironman-principal.jpg');
+   
+   width: 100%;
+   height: 100%;
 
-    height: 400px;
-    background-size: cover;
+    background-position:50%;
     
+
+    width:auto;
+    height: 800px;
+    background-size: cover;
+    box-sizing: border-box;
+    
+
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content:left;
+    align-items:flex-end;
+    
+}
+
+.filme-principal > .myVideo{
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+overflow: hidden;
+
 }
 
 .filme-principal .descricao{
@@ -98,7 +121,9 @@ header nav a:hover {
     color: white;
 
     padding: 15px 30px;
+   
     margin-right: 15px;
+    margin-bottom: 20%;
 
     cursor: pointer;
     transition: .5s ease all;
@@ -116,16 +141,22 @@ header nav a:hover {
 
 .container{
     margin-left: 20px;
+    
+
 }
 
 .filme-principal .container{
     width: 70%;
+    
+    
+  
 }
 
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
+    
 }
 
 .carrosel-filmes{
@@ -147,4 +178,19 @@ display: flex;
 justify-content: first baseline;
 
 
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }

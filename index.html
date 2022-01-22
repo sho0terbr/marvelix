@@ -15,26 +15,39 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h2 class="logo">MARVELIX</h2>
-        <nav>
-          <a href="#">Início</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Documentários</a>
-        </nav>
+      <div id="menu"> 
+        <div class="container">
+          <h2 class="logo">MARVELIX</h2>
+          <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+          </nav>
+        </div>
       </div>
     </header>
 
+
+  
     <main>
+      
+
+
       <div class="filme-principal">
-              <div class="container">
+        <div class="myVideo">
+          <!--
+       <video autoplay muted  id="myVideo" >
+          <source src="/img/The Witcher_ Temporada 2 _ Trailer Oficial _ Netflix.mp4" type="video/mp4">
+          </video> -->
+          </div>
+
+
+<div class="container">
             
-          <h3 class="titulo">The witcher</h3>
+          <h3 class="titulo">Iron Man 3</h3>
           <p class="descricao">
-            O mutante Geralt de Rívia é um caçador de monstros que luta para
-            encontrar seu lugar num mundo onde as pessoas muitas vezes são mais
-            perversas que as criaturas selvagens.
+            Depois de um inimigo reduzir o mundo de Tony Stark a destroços, o Homem de Ferro precisa aprender a confiar em seus instintos para proteger aqueles que ama, especialmente sua namorada, e lutar contra seu maior medo: o fracasso.
           </p>
           <div class="botoes">
             <button role="button" class="botao">
@@ -43,16 +56,22 @@
             </button>
             <button role="button" class="botao">
               <i class="fas fa-info-circle"></i>
-              <span>MAIS INFORMAÇÕES</span>>
+              <span>MAIS INFORMAÇÕES</span>
             </button>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
             
 
           </div>
         </div>
-      </div>
+
+     
     </main>
+    <main>
 
     <div class="carrosel-filmes">
+      <div class="sub-titulo">
+        <h3 >SUPER PRODUÇÕES</h3>
+      </div>
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img class="box-filme" src="img/eternos.jpg" alt="eternos" />
@@ -91,11 +110,57 @@
           <img class="box-filme" src="img/venon.jpg" alt="venon" />
         </div>
       </div>
-    </div>
+      <div class="sub-titulo">
+        <h3 >SUPER AGUARDADOS
+        </h3>
+      </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img class="box-filme" src="img/eternos.jpg" alt="eternos" />
+          </div>
+          <div class="item">
+            <img
+              class="box-filme"
+              src="img/gaviaoarqueiro.jpg"
+              alt="gaviao arqueiro"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="box-filme"
+              src="img/ghostbusters.jpg"
+              alt="ghostbusters"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="box-filme"
+              src="img/homem-aranha.jpg"
+              alt="homen aranha"
+            />
+          </div>
+          <div class="item">
+            <img class="box-filme" src="img/loki.jpg" alt="loki" />
+          </div>
+          <div class="item">
+            <img class="box-filme" src="img/matrix.jpg" alt="matrix" />
+          </div>
+          <div class="item">
+            <img class="box-filme" src="img/simpsons.jpg" alt="simpsons" />
+          </div>
+          <div class="item">
+            <img class="box-filme" src="img/venon.jpg" alt="venon" />
+          </div>
+        </div> 
+        
+      </div>
+    </main>
 
     <script src="https://kit.fontawesome.com/8755816df9.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/javascript.js"></script>
+  </div>
   </body>
 </html>
