@@ -35,6 +35,7 @@ function myFunction() {
 function enableMute(){
   if (video.muted === false) {    
     video.muted = true;
+    
 }
 else {
   video.muted = false;
