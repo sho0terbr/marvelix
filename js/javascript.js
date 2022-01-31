@@ -40,13 +40,13 @@ var btnVol = document.getElementById("btnAudio");
 function enableMute(){
   if (video.muted === false) {    
     video.muted = true;
-    btnVol.classList.add("fa-volume-up")
-    btnVol.classList.remove("fa-volume-mute");
+    btnVol.classList.add("fa-volume-mute")
+    btnVol.classList.remove("fa-volume-up");
 }
 else {
   video.muted = false;
-  btnVol.classList.remove("fa-volume-up")
-  btnVol.classList.add("fa-volume-mute");
+  btnVol.classList.remove("fa-volume-mute")
+  btnVol.classList.add("fa-volume-up");
      }
     }
 
